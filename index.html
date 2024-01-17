@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="Netflix_Logo_RGB.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Netflix</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img id="logo" src="Netflix_Logo_RGB.png" alt="logo"></a>
+      <button class="navbar-toggler collapsed white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars white"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Recently Added</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">My List</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex right-nav">
+        <i class="fa-solid fa-magnifying-glass white mx-2"></i>
+        <p class="white m-0 p-1 mx-2">KIDS</p>
+        <i class="fa-solid fa-bell white mx-2"></i>
+        <img src="avatar-7.jpg" alt="user" class="user p-0 mx-2">
+        <i class="fa-solid fa-caret-down white"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between py-3">
+      <div class="col-5 d-flex d-none d-lg-inline-flex">
+        <p class="tvShows white mb-0">TV Shows</p>
+        <select name="mode" id="mode" class="rounded mx-3 px-2">
+          <option value="genre">Genre</option>
+          <option value="year">Year</option>
+          <option value="popular">Popular</option>
+          <option value="list">List</option>
+        </select>
+      </div>
+      <div class="col-5 d-flex justify-content-end">
+        <i class="fa-solid fa-align-left white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
+        <i class="fa-solid fa-border-all white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
+      </div>
+    </div>
+  </div>
+  <!-- first carousel -->
+  <div class="container my-3">
+    <h2 class="font-weight-light white ms-3">Trending Now</h2>
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="1.png" class="img-fluid" alt="1.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="2.png" class="img-fluid" alt="2.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="3.png" class="img-fluid" alt="3.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="4.png" class="img-fluid" alt="4.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="5.png" class="img-fluid" alt="5.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="6.png" class="img-fluid" alt="6.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- second carousel -->
+  <div class="container my-3">
+    <h2 class="font-weight-light white ms-3">Watch It Again</h2>
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="7.png" class="img-fluid" alt="7.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="8.png" class="img-fluid" alt="8.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="9.png" class="img-fluid" alt="9.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="10.png" class="img-fluid" alt="10.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="11.png" class="img-fluid" alt="11.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="12.png" class="img-fluid" alt="12.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- third carousel -->
+  <div class="container my-3">
+    <h2 class="font-weight-light white ms-3">Watch It Again</h2>
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img d-flex justify-content-center">
+                  <img src="13.png" class="img-fluid" alt="13.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img">
+                  <img src="14.png" class="img-fluid" alt="14.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img">
+                  <img src="15.png" class="img-fluid" alt="15.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img">
+                  <img src="16.png" class="img-fluid" alt="16.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img">
+                  <img src="17.png" class="img-fluid" alt="17.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+              <div class="card">
+                <div class="card-img">
+                  <img src="18.png" class="img-fluid" alt="18.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c2c086fb37.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

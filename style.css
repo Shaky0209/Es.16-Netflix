@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+}
+
+nav.navbar{
+    background-color: black !important;
+}
+
+nav > div > div > ul > li > a.nav-link{
+    color: white !important;
+}
+
+.white{
+    color: white;
+}
+
+#logo{
+    height: 40px;
+}
+
+div.right-nav > *{
+    color: white;
+    padding:10px;
+}
+
+.user{
+    height: 30px;
+    width: 30px;
+}
+
+.genres{
+    height: 40px;
+    width: 105px;
+    padding: 6px;
+    border: 1px solid white;
+}
+
+.line{
+    border: 1px solid white; 
+}
+
+.tvShows{
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+select{
+    color: white;
+    background-color: black;
+}
+
+button.navbar-toggler.white{
+    background: black;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+i.fa-solid.fa-bars.white{
+    margin-top: 5px;
+}
+
+.card{
+    background-color: black;
+}
+
+footer{
+    height: 500px;
+}
+
+
+
+/* BOOTSTRAP CSS */
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+} 
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
