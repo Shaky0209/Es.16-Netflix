@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">TV Shows</a>
@@ -37,14 +37,23 @@
             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">My List</a>
           </li>
         </ul>
+        <div class="d-flex align-items-center justify-content-lg-end right-nav">
+          <i class="fa-solid fa-magnifying-glass white mx-2"></i>
+          <p class="white m-0 p-1 mx-2">KIDS</p>
+          <i class="fa-solid fa-bell white mx-2"></i>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="avatar-7.jpg" alt="user" class="user p-0 ">          
+            </button>
+            <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-youtube me-2"></i>My videos</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Setting</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="d-flex right-nav">
-        <i class="fa-solid fa-magnifying-glass white mx-2"></i>
-        <p class="white m-0 p-1 mx-2">KIDS</p>
-        <i class="fa-solid fa-bell white mx-2"></i>
-        <img src="avatar-7.jpg" alt="user" class="user p-0 mx-2">
-        <i class="fa-solid fa-caret-down white"></i>
-      </div>
+      
     </div>
   </nav>
   <div class="container-fluid">
@@ -58,7 +67,7 @@
           <option value="list">List</option>
         </select>
       </div>
-      <div class="col-5 d-flex justify-content-end">
+      <div class="col-5 d-flex justify-content-end bottom-right-nav px-0">
         <i class="fa-solid fa-align-left white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
         <i class="fa-solid fa-border-all white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
       </div>
@@ -67,11 +76,11 @@
   <!-- first carousel -->
   <div class="container my-3">
     <h2 class="font-weight-light white ms-3">Trending Now</h2>
-    <div class="row mx-auto my-auto justify-content-center">
+    <div class="row mx-auto my-auto justify-content-center align-items-center carousel-row">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-4">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="1.png" class="img-fluid" alt="1.png">
@@ -125,10 +134,10 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
@@ -195,10 +204,10 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel2" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel2" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel2" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
@@ -265,17 +274,63 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel3" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel3" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel3" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </div>
   </div>
 
-  <footer>
+  <footer class="container-fluid">
+    <div class="row d-flex">
+      <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 offset-lg-2 mt-3">
+        <div class="d-flex justify-content-center mb-2">
+          <i class="fa-brands fa-square-facebook brands-class"></i>
+          <i class="fa-brands fa-square-instagram brands-class"></i>
+          <i class="fa-brands fa-twitter brands-class"></i>
+          <i class="fa-brands fa-youtube brands-class"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
+        <div>
+          <p class="foot-write">Audio and Subtitles</p>
+          <p class="foot-write">Media Center</p>
+          <p class="foot-write">Privacy</p>
+          <p class="foot-write">Contact Us</p>
+          <button class="foot-btn">Service Code</button>
+        </div>
+        
+      </div>
+      <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
+        <div>
+          <p class="foot-write">Audio Description</p>
+          <p class="foot-write">Investor Relations</p>
+          <p class="foot-write">Legal Notices</p>
+        </div>
+      </div>
+      <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
+        <div>
+          <p class="foot-write">Help Center</p>
+          <p class="foot-write">Jobs</p>
+          <p class="foot-write">Cookie Preferences<p>
+        </div>
+      </div>
+      <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
+        <div>
+          <p class="foot-write">Gift Cards</p>
+          <p class="foot-write">Terms of Use</p>
+          <p class="foot-write">Corporate Information<p>
+        </div>
+      </div>
+      <div class="col-12">
+        <p class="foot-write bottom-write">© 1997-2019 Netflix, Inc {i-0d00fcda2fdf9c0de}</p>
+      </div>
+    </div>
     
   </footer>
 

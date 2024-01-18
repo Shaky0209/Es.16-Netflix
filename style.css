@@ -23,6 +23,7 @@ div.right-nav > *{
     padding:10px;
 }
 
+
 .user{
     height: 30px;
     width: 30px;
@@ -35,6 +36,10 @@ div.right-nav > *{
     border: 1px solid white;
 }
 
+.bottom-right-nav{
+    margin-right: 20px;
+}
+
 .line{
     border: 1px solid white; 
 }
@@ -42,6 +47,63 @@ div.right-nav > *{
 .tvShows{
     font-weight: bold;
     font-size: 18pt;
+}
+
+.btn-secondary{
+    background-color: rgb(23, 23, 23);
+    border: none;
+}
+
+.user-menu{
+    margin-left: -100px;
+    background-color: rgb(23, 23, 23);
+}
+
+.user-menu > li > a{
+    color: white;
+}
+
+.scale-me{
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.left-arrows{
+    width: 50px;
+    margin-left: -25px;
+}
+
+.right-arrows{
+    width: 50px;
+    margin-right: -25px;
+}
+
+.brands-class{
+    font-size: 17pt;
+    margin: 0 5px;
+    color: grey;
+}
+
+.foot-write{
+    color: grey;
+}
+
+.foot-btn{
+    background-color: black;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.bottom-write{
+    margin-left: 16vw;
+    margin-top: 10px;
 }
 
 select{
@@ -67,7 +129,11 @@ footer{
     height: 500px;
 }
 
-
+@media (max-width: 991px){
+    .bottom-write{
+        margin-left: 0;
+    }
+}
 
 /* BOOTSTRAP CSS */
 
