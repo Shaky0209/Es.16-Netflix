@@ -42,8 +42,9 @@
           <p class="white m-0 p-1 mx-2">KIDS</p>
           <i class="fa-solid fa-bell white mx-2"></i>
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="avatar-7.jpg" alt="user" class="user p-0 ">          
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="avatar-7.jpg" alt="user" class="user p-0 ">
             </button>
             <ul class="dropdown-menu user-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user me-2"></i>Profile</a></li>
@@ -53,34 +54,33 @@
           </div>
         </div>
       </div>
-      
     </div>
   </nav>
   <div class="container-fluid">
     <div class="row d-flex justify-content-between py-3">
-      <div class="col-5 d-flex d-none d-lg-inline-flex">
+      <div class="col-5 d-flex d-none d-lg-inline-flex bottom-nav">
         <p class="tvShows white mb-0">TV Shows</p>
         <select name="mode" id="mode" class="rounded mx-3 px-2">
           <option value="genre">Genre</option>
           <option value="year">Year</option>
           <option value="popular">Popular</option>
-          <option value="list">List</option>
+          <option value="list">New</option>
         </select>
       </div>
-      <div class="col-5 d-flex justify-content-end bottom-right-nav px-0">
-        <i class="fa-solid fa-align-left white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
-        <i class="fa-solid fa-border-all white line px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
+      <div class="col-5 d-flex justify-content-end bottom-right-nav bottom-nav px-0">
+        <i class="fa-solid fa-align-left white line pointer px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
+        <i class="fa-solid fa-border-all white line pointer px-3 pt-2 mt-1 mx-1 d-none d-lg-inline-flex"></i>
       </div>
     </div>
   </div>
   <!-- first carousel -->
-  <div class="container my-3">
-    <h2 class="font-weight-light white ms-3">Trending Now</h2>
-    <div class="row mx-auto my-auto justify-content-center align-items-center carousel-row">
+  <div class="container-fluid element opacity mt-3">
+    <h2 class="font-weight-light white ms-3">Watch It Again</h2>
+    <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-4">
+          <div class="carousel-item carousel-width active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="1.png" class="img-fluid" alt="1.png">
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="2.png" class="img-fluid" alt="2.png">
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="3.png" class="img-fluid" alt="3.png">
@@ -107,7 +107,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="4.png" class="img-fluid" alt="4.png">
@@ -116,7 +116,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="5.png" class="img-fluid" alt="5.png">
@@ -125,7 +125,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="6.png" class="img-fluid" alt="6.png">
@@ -134,23 +134,25 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel" role="button"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel" role="button"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </div>
   </div>
   <!-- second carousel -->
-  <div class="container my-3">
+  <div class="container-fluid element opacity mt-3">
     <h2 class="font-weight-light white ms-3">Watch It Again</h2>
     <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+          <div class="carousel-item carousel-width active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="7.png" class="img-fluid" alt="7.png">
@@ -159,7 +161,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="8.png" class="img-fluid" alt="8.png">
@@ -168,7 +170,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="9.png" class="img-fluid" alt="9.png">
@@ -177,7 +179,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="10.png" class="img-fluid" alt="10.png">
@@ -186,7 +188,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="11.png" class="img-fluid" alt="11.png">
@@ -195,7 +197,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="12.png" class="img-fluid" alt="12.png">
@@ -204,23 +206,25 @@
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel2" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel2" role="button"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel2" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel2" role="button"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </div>
   </div>
   <!-- third carousel -->
-  <div class="container my-3">
-    <h2 class="font-weight-light white ms-3">Watch It Again</h2>
+  <div class="container-fluid element opacity mt-3">
+    <h2 class="font-weight-light white ms-3">New Releases</h2>
     <div class="row mx-auto my-auto justify-content-center">
       <div id="recipeCarousel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
         <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+          <div class="carousel-item carousel-width active">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
                 <div class="card-img d-flex justify-content-center">
                   <img src="13.png" class="img-fluid" alt="13.png">
@@ -229,62 +233,64 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
-                <div class="card-img">
+                <div class="card-img d-flex justify-content-center">
                   <img src="14.png" class="img-fluid" alt="14.png">
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
-                <div class="card-img">
+                <div class="card-img d-flex justify-content-center">
                   <img src="15.png" class="img-fluid" alt="15.png">
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
-                <div class="card-img">
+                <div class="card-img d-flex justify-content-center">
                   <img src="16.png" class="img-fluid" alt="16.png">
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
-                <div class="card-img">
+                <div class="card-img d-flex justify-content-center">
                   <img src="17.png" class="img-fluid" alt="17.png">
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="col-12 col-sm-6 col-md-3 col-lg-2 mx-1">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
               <div class="card">
-                <div class="card-img">
+                <div class="card-img d-flex justify-content-center">
                   <img src="18.png" class="img-fluid" alt="18.png">
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel3" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev bg-transparent w-aut left-arrows" href="#recipeCarousel3" role="button"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </a>
-        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel3" role="button" data-bs-slide="next">
+        <a class="carousel-control-next bg-transparent w-aut right-arrows" href="#recipeCarousel3" role="button"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
     </div>
   </div>
 
-  <footer class="container-fluid">
+  <footer class="container-fluid mt-5 pt-5">
     <div class="row d-flex">
       <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 offset-lg-2 mt-3">
         <div class="d-flex justify-content-center mb-2">
@@ -304,7 +310,7 @@
           <p class="foot-write">Contact Us</p>
           <button class="foot-btn">Service Code</button>
         </div>
-        
+
       </div>
       <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
         <div>
@@ -317,21 +323,27 @@
         <div>
           <p class="foot-write">Help Center</p>
           <p class="foot-write">Jobs</p>
-          <p class="foot-write">Cookie Preferences<p>
+          <p class="foot-write">Cookie Preferences
+          <p>
         </div>
       </div>
       <div class="col-12 d-flex flex-column align-items-center col-sm-6 col-md-3 col-lg-2 mt-3">
         <div>
           <p class="foot-write">Gift Cards</p>
           <p class="foot-write">Terms of Use</p>
-          <p class="foot-write">Corporate Information<p>
+          <p class="foot-write">Corporate Information
+          <p>
         </div>
       </div>
-      <div class="col-12">
-        <p class="foot-write bottom-write">© 1997-2019 Netflix, Inc {i-0d00fcda2fdf9c0de}</p>
+      <div class="container-fluid">
+        <div class="row ms-md-1">
+          <div class="col-12 col-sm-11 col-lg-8">
+            <p class="foot-write bottom-write">© 1997-2019 Netflix, Inc {i-0d00fcda2fdf9c0de}</p>
+          </div>
+        </div>
       </div>
     </div>
-    
+
   </footer>
 
 

@@ -1,17 +1,28 @@
+:root{
+    --background: black;
+    --write: white;
+    --userButton: rgb(23, 23, 23);
+    --brands: grey;
+}
+
 body{
     background-color: black;
+    position: relative;
 }
 
 nav.navbar{
-    background-color: black !important;
+    width: 100%;
+    position: fixed;
+    background-color: var(--background) !important;
+    z-index: 100;
 }
 
 nav > div > div > ul > li > a.nav-link{
-    color: white !important;
+    color: var(--write) !important;
 }
 
 .white{
-    color: white;
+    color: var(--write);
 }
 
 #logo{
@@ -19,21 +30,31 @@ nav > div > div > ul > li > a.nav-link{
 }
 
 div.right-nav > *{
-    color: white;
+    color: var(--write);
     padding:10px;
 }
 
+.right-nav{
+    position: absolute;
+    /* height: 100%; */
+    left: calc(100vw - 270px);
+    background-color: var(--background);
+}
 
 .user{
     height: 30px;
     width: 30px;
 }
 
+.bottom-nav{
+    margin-top: 80px;
+}
+
 .genres{
     height: 40px;
     width: 105px;
     padding: 6px;
-    border: 1px solid white;
+    border: 1px solid var(--write);
 }
 
 .bottom-right-nav{
@@ -41,7 +62,12 @@ div.right-nav > *{
 }
 
 .line{
-    border: 1px solid white; 
+    border: 1px solid var(--write);
+    border-radius: 3px;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 .tvShows{
@@ -50,13 +76,13 @@ div.right-nav > *{
 }
 
 .btn-secondary{
-    background-color: rgb(23, 23, 23);
+    background-color: var(--userButton);
     border: none;
 }
 
 .user-menu{
-    margin-left: -100px;
-    background-color: rgb(23, 23, 23);
+    margin-left: -80px;
+    background-color: var(--userButton);
 }
 
 .user-menu > li > a{
@@ -64,15 +90,18 @@ div.right-nav > *{
 }
 
 .scale-me{
-    transform: scale(1.2);
-    z-index: 10;
+    animation: transformScale .3s ease-in-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    z-index: 1 !important;
 }
 
 .card{
+    margin: 50px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 300px;
+    z-index: 0;
 }
 
 .left-arrows{
@@ -88,7 +117,7 @@ div.right-nav > *{
 .brands-class{
     font-size: 17pt;
     margin: 0 5px;
-    color: grey;
+    color: var(--brands);
 }
 
 .foot-write{
@@ -96,9 +125,9 @@ div.right-nav > *{
 }
 
 .foot-btn{
-    background-color: black;
-    border: 1px solid grey;
-    color: grey;
+    background-color: var(--background);
+    border: 1px solid var(--brands);
+    color: var(--brands);
 }
 
 .bottom-write{
@@ -107,14 +136,14 @@ div.right-nav > *{
 }
 
 select{
-    color: white;
-    background-color: black;
+    color: var(--write);
+    background-color: var(--background);
 }
 
 button.navbar-toggler.white{
-    background: black;
-    border: 1px solid white;
-    border-radius: 3px;
+    background: var(--background);
+    border: 1px solid var(--write);
+    border-radius: 4px;
 }
 
 i.fa-solid.fa-bars.white{
@@ -122,17 +151,22 @@ i.fa-solid.fa-bars.white{
 }
 
 .card{
-    background-color: black;
+    box-sizing: border-box;
+    padding: 3px;
+    background-color: var(--background);
 }
 
 footer{
     height: 500px;
 }
 
-@media (max-width: 991px){
-    .bottom-write{
-        margin-left: 0;
-    }
+.opacity{
+    opacity: 0%;
+}
+
+.lesAppears{
+    animation: appears .8s ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 /* BOOTSTRAP CSS */
@@ -141,9 +175,52 @@ footer{
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
     display: flex;
-} 
+}
 
-/* medium and up screens */
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+/* Keyframes */
+@keyframes appears{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}
+
+@keyframes transformScale{
+    from{transform: scale(1);}
+    to{transform: scale(1.2);}
+}
+/* Media Screen */
+@media (max-width: 991px){
+    .bottom-write{
+        margin-left: 0;
+    }
+
+    .opening{
+        padding-bottom: 62px;
+    }
+}
+
+@media (max-width: 991px){
+    .right-nav{
+        left: 0px;
+        opacity: 0;
+    }
+    .open{
+        animation: appears .6s ease-in-out .2s;
+        animation-fill-mode: forwards;
+    }
+    
+    .close{
+        opacity: 0;
+    }
+}
+
+ 
+
+/* medium and up screens  BOOTSTRAP*/
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-end.active,
@@ -157,7 +234,3 @@ footer{
     }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
