@@ -66,7 +66,6 @@ buttonToggler.addEventListener("click", () => {
 
 // Footer brands events
 brands = document.querySelectorAll("footer>div>div>div>i");
-console.log(brands);
 
 brands.forEach(element =>{
     element.addEventListener("mouseenter", () => {
