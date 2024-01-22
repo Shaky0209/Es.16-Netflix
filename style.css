@@ -36,7 +36,6 @@ div.right-nav > *{
 
 .right-nav{
     position: absolute;
-    /* height: 100%; */
     left: calc(100vw - 270px);
     background-color: var(--background);
 }
@@ -44,6 +43,47 @@ div.right-nav > *{
 .user{
     height: 30px;
     width: 30px;
+}
+
+span.navbar-toggler-icon{
+    position: relative;
+}
+.btn-row.top, .btn-row.center, .btn-row.down{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: var(--write);
+}
+
+.btn-row.top{
+    top: 5px;
+}
+
+.btn-row.center{
+    top: 13.5px;
+}
+
+.btn-row.down{
+    bottom: 5px;
+}
+
+.btn-row.top.start{
+    animation: topClick .8s linear;
+    animation-fill-mode: forwards;
+}
+
+.btn-row.center.start{
+    animation: centerClick .8s linear;
+    animation-fill-mode: forwards;
+}
+
+.btn-row.down.start{
+    animation: downClick .8s linear;
+    animation-fill-mode: forwards;
+}
+
+.btn-row.top.start.stop, .btn-row.center.start.stop, .btn-row.down.start.stop{
+    animation-direction: reverse;
 }
 
 .bottom-nav{
@@ -87,6 +127,10 @@ div.right-nav > *{
 
 .user-menu > li > a{
     color: white;
+}
+
+.carousel{
+    width: calc(100vw - 70px);
 }
 
 .scale-me{
@@ -165,7 +209,7 @@ footer{
 }
 
 .lesAppears{
-    animation: appears .8s ease-in-out;
+    animation: appears .8s ease-in-out .1s;
     animation-fill-mode: forwards;
 }
 
@@ -191,6 +235,24 @@ footer{
 @keyframes transformScale{
     from{transform: scale(1);}
     to{transform: scale(1.2);}
+}
+
+@keyframes topClick {
+    0%{translate: 0px 0px; }
+    50%{translate: 0px 8.5px; rotate: 0deg;}
+    100%{translate: 0px 8.5px; rotate: 135deg;}    
+}
+
+@keyframes centerClick {
+    0%{rotate: 0deg;}
+    50%{rotate: 0deg;}
+    100%{rotate: 45deg;}    
+}
+
+@keyframes downClick {
+    0%{translate: 0px 0px; }
+    50%{translate: 0px -8.5px; rotate: 0deg;}
+    100%{translate: 0px -8.5px; rotate: 135deg;}
 }
 /* Media Screen */
 @media (max-width: 991px){

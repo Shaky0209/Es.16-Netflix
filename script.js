@@ -111,5 +111,32 @@ window.addEventListener("resize", ()=>{
     const reload = ()=>{
         window.location.reload();
     }
-    setTimeout(reload, 4000);
+    setTimeout(reload, 2000);
 });
+
+// Animation button-navbar toggler
+const btnRow = document.querySelectorAll(".btn-row");
+const btn = document.querySelector("button");
+let btnStatus = false;
+
+const animation = ()=>{
+    btnRow.forEach(element => {
+        element.classList.remove("start", "stop");
+    });
+
+    if(!btnStatus){    
+        btnRow.forEach(element => {
+            element.offsetWidth;        
+            element.classList.add("start");
+            btnStatus = true;        
+        });
+    }else{
+        btnRow.forEach(element =>{
+            element.offsetWidth;
+            element.classList.add("stop", "start");
+            btnStatus = false;
+        })
+    }
+}
+
+btn.addEventListener("click", animation);
